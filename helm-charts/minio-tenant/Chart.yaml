@@ -1,0 +1,15 @@
+apiVersion: v2
+name: minio-tenant
+description: A Helm chart for installing a minio tenant, including Network Security Policy
+
+type: application
+
+version: 5.0.15
+
+dependencies:
+- name: tenant
+  version: 5.0.15
+  repository: https://operator.min.io
+
+
+appVersion: "5.0.15"
