@@ -1,0 +1,9 @@
+apiVersion: v2
+name: mariadb-instance
+description: A Helm chart to stand up a mariadb instance
+
+type: application
+
+version: 0.29.0
+
+appVersion: "0.29.0"

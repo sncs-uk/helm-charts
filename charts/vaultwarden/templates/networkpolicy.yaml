@@ -1,0 +1,24 @@
+{{- if .Values.networkPolicy.enabled -}}
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-vaultwarden-to-internet-egress
+spec:
+  policyTypes:
+    - Egress
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/component: vaultwarden
+  egress:
+    - to:
+      - ipBlock:
+          cidr: 0.0.0.0/0
+          {{- with .Values.networkPolicy.deniedExternalIPs }}
+          except:
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
+      ports:
+      - protocol: TCP
+        port: 443
+{{- end }}

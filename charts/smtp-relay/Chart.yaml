@@ -1,0 +1,9 @@
+apiVersion: v2
+name: smtp-relay
+description: A Helm chart to deploy Postfix as an SMTP relay agent
+
+type: application
+
+version: 1.0.0
+
+appVersion: "1.7.1"
