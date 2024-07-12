@@ -9,6 +9,7 @@ on:
 
 jobs:
   release:
+    if: github.repository == 'sncs-uk/helm-charts'
     permissions:
       contents: write
     runs-on: ubuntu-latest
