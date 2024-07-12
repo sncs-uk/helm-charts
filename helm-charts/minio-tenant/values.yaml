@@ -1,0 +1,43 @@
+users: []
+  # - access_key: minio
+  #   secret_key: minio123
+
+networkPolicy:
+  enabled: true
+  deniedExternalIPs:
+    - 10.0.0.0/8
+    - 172.16.0.0/12
+    - 192.168.0.0/16
+
+tenant:
+  secrets:
+    name: myminio-env-configuration
+    accessKey: admin
+    secretKey: MySuperSecretPassword
+  tenant:
+    name: myminio
+    users: []
+      # - name: minio
+    buckets:
+      - name: my-minio-bucket
+        objectLock: false
+        region: us-east-1
+  ingress:
+    api:
+      enabled: true
+      annotations:
+        cert-manager.io/cluster-issuer: letsencrypt
+      tls:
+        - hosts:
+          - s3.example.com
+          secretName: api-tls
+      host: s3.example.com
+    console:
+      enabled: false
+      annotations:
+        cert-manager.io/cluster-issuer: letsencrypt
+      tls:
+        - hosts:
+          - s3-console.example.com
+          secretName: console-tls
+      host: s3-console.example.com
