@@ -1,0 +1,89 @@
+apiVersion: v1
+entries:
+  mariadb-instance:
+  - apiVersion: v2
+    appVersion: 0.29.0
+    created: "2024-07-12T14:52:53.468342777Z"
+    description: A Helm chart to stand up a mariadb instance
+    digest: 3e48c512c016307a6a1a9848553174eee9fe17d01566428c9b0e5daef5bc82a4
+    name: mariadb-instance
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/mariadb-instance-0.29.0/mariadb-instance-0.29.0.tgz
+    version: 0.29.0
+  mariadb-operator:
+  - apiVersion: v2
+    appVersion: 0.29.0
+    created: "2024-07-12T14:52:53.581254525Z"
+    dependencies:
+    - name: mariadb-operator
+      repository: https://helm.mariadb.com/mariadb-operator
+      version: ~0.29.0
+    description: A Helm chart for installing the mariadb operator, including Network
+      Security Policy
+    digest: 2f75faf020b215627d2a1f58a7869733a282eda279d8de29038b907f6bfa22d3
+    name: mariadb-operator
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/mariadb-operator-0.29.0/mariadb-operator-0.29.0.tgz
+    version: 0.29.0
+  minio-operator:
+  - apiVersion: v2
+    appVersion: 5.0.15
+    created: "2024-07-12T14:52:53.685357383Z"
+    dependencies:
+    - name: operator
+      repository: https://operator.min.io
+      version: 5.0.15
+    description: A Helm chart for installing the minio operator, including Network
+      Security Policy
+    digest: d156865852aead347079254d3f8fe81de09d30629f9ca2a4e246480220c1fe24
+    name: minio-operator
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/minio-operator-5.0.15/minio-operator-5.0.15.tgz
+    version: 5.0.15
+  minio-tenant:
+  - apiVersion: v2
+    appVersion: 5.0.15
+    created: "2024-07-12T14:52:53.813548188Z"
+    dependencies:
+    - name: tenant
+      repository: https://operator.min.io
+      version: 5.0.15
+    description: A Helm chart for installing a minio tenant, including Network Security
+      Policy
+    digest: 96e8a78607e2839263f2bac597eb0f2e1e777f740cf109362df07af87f715364
+    name: minio-tenant
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/minio-tenant-5.0.15/minio-tenant-5.0.15.tgz
+    version: 5.0.15
+  smtp-relay:
+  - apiVersion: v2
+    appVersion: 1.7.1
+    created: "2024-07-12T14:52:53.910780947Z"
+    description: A Helm chart to deploy Postfix as an SMTP relay agent
+    digest: 3bd6112d32082dece85157271562e870a4351bdaea7b09e19aab7f7665207b48
+    name: smtp-relay
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/smtp-relay-1.0.0/smtp-relay-1.0.0.tgz
+    version: 1.0.0
+  vaultwarden:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-07-12T14:52:54.029511172Z"
+    dependencies:
+    - name: vaultwarden
+      repository: https://guerzon.github.io/vaultwarden
+      version: 0.22.7
+    description: A Helm chart for installing a vaultwarden instance, including Network
+      Security Policy
+    digest: ce280fa34f10518cad67956f553739d703025e789f908a6d5f5af4167e46ec42
+    name: vaultwarden
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
+    version: 1.0.0
+generated: "2024-07-12T14:52:54.029522454Z"
