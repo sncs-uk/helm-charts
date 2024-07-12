@@ -8,4 +8,4 @@ appVersion: "1.16.0"
 dependencies:
 - name: vaultwarden
   version: "0.22.7"
-  repository: "https://guerzon.github.io/vaultwarden/"
+  repository: "https://guerzon.github.io/vaultwarden"
