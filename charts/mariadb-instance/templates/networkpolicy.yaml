@@ -1,0 +1,19 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-operator-to-db
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: {{ .Values.name }}
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            kubernetes.io/metadata.name: mariadb-operator
+    - ports:
+      - protocol: TCP
+        port: 3306
