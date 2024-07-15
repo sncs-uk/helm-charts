@@ -8,7 +8,7 @@ A Helm chart for installing a vaultwarden instance, including Network Security P
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://guerzon.github.io/vaultwarden/ | vaultwarden | 0.22.7 |
+| https://guerzon.github.io/vaultwarden | vaultwarden | 0.22.7 |
 
 ## Values
 
