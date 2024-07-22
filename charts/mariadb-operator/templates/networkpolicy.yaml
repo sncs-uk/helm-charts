@@ -21,7 +21,7 @@ metadata:
 spec:
   podSelector:
     matchLabels:
-      app.kubernetes.io/instance: mariadb-operator
+      app.kubernetes.io/name: mariadb-operator
   policyTypes:
     - Egress
   egress:
