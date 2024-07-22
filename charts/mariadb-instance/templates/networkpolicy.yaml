@@ -6,7 +6,8 @@ metadata:
 spec:
   podSelector:
     matchLabels:
-      app.kubernetes.io/name: {{ .Values.name }}
+      app.kubernetes.io/name: mariadb
+      app.kubernetes.io/instance: {{ .Values.name }}
   policyTypes:
     - Ingress
   ingress:
