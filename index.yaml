@@ -34,6 +34,21 @@ entries:
   mariadb-operator:
   - apiVersion: v2
     appVersion: 0.29.0
+    created: "2024-07-22T10:40:14.736086504Z"
+    dependencies:
+    - name: mariadb-operator
+      repository: https://helm.mariadb.com/mariadb-operator
+      version: ~0.29.0
+    description: A Helm chart for installing the mariadb operator, including Network
+      Security Policy
+    digest: 5d8b8b476d1dca72f61c4e97207461a8c3bedbc23b7e3ed3bf113c5b5e020467
+    name: mariadb-operator
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/mariadb-operator-0.29.2/mariadb-operator-0.29.2.tgz
+    version: 0.29.2
+  - apiVersion: v2
+    appVersion: 0.29.0
     created: "2024-07-15T13:38:05.787035619Z"
     dependencies:
     - name: mariadb-operator
@@ -121,4 +136,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2024-07-15T13:47:21.292158297Z"
+generated: "2024-07-22T10:40:14.736108214Z"
