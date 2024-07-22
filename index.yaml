@@ -3,6 +3,16 @@ entries:
   mariadb-instance:
   - apiVersion: v2
     appVersion: 0.29.0
+    created: "2024-07-22T11:50:39.743984398Z"
+    description: A Helm chart to stand up a mariadb instance
+    digest: 69a06481d32267437ce7e933acdc608e49fcb18b8ff13b45948e9da00276e129
+    name: mariadb-instance
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/mariadb-instance-0.29.3/mariadb-instance-0.29.3.tgz
+    version: 0.29.3
+  - apiVersion: v2
+    appVersion: 0.29.0
     created: "2024-07-15T13:47:21.292139562Z"
     description: A Helm chart to stand up a mariadb instance
     digest: 96167190fa1f0c364fe4610d10449d47300efc36f5e60fe77f0bb7e0e512e9ab
@@ -136,4 +146,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2024-07-22T10:40:14.736108214Z"
+generated: "2024-07-22T11:50:39.744015416Z"
