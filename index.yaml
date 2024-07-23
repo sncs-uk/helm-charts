@@ -119,6 +119,23 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/minio-tenant-5.0.15/minio-tenant-5.0.15.tgz
     version: 5.0.15
+  projectsend:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-07-23T13:42:30.468479067Z"
+    dependencies:
+    - alias: mariadb
+      condition: mariadb.enabled
+      name: mariadb-instance
+      repository: https://sncs-uk.github.io/helm-charts
+      version: ~0.29.3
+    description: A Helm chart for deploying ProjectSend
+    digest: 5aa8dc59e4764933bcf6659e4306d901da8df191a23c40be1e3e439e2907a620
+    name: projectsend
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/projectsend-1.0.0/projectsend-1.0.0.tgz
+    version: 1.0.0
   smtp-relay:
   - apiVersion: v2
     appVersion: 1.7.1
@@ -146,4 +163,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2024-07-22T11:50:39.744015416Z"
+generated: "2024-07-23T13:42:30.468518712Z"
