@@ -1,0 +1,16 @@
+apiVersion: v2
+name: projectsend
+description: A Helm chart for deploying ProjectSend
+
+type: application
+
+version: 1.0.0
+
+dependencies:
+  - name: mariadb-instance
+    version: ~0.29.3
+    repository: https://sncs-uk.github.io/helm-charts
+    alias: mariadb
+    condition: mariadb.enabled
+
+appVersion: "1.16.0"

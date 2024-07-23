@@ -1,0 +1,26 @@
+{{- $db := .Values.mariadb.database -}}
+{{- $dbUser := .Values.mariadb.username -}}
+{{- $dbHost := .Values.mariadb.name -}}
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "projectsend.fullname" . }}-app-config
+  labels:
+    {{ include "projectsend.labels" . | nindent 4 }}
+data:
+  sys.config.php: |
+    <?php
+    define('DB_DRIVER', 'mysql');
+
+    define('DB_NAME', "{{ $db }}");
+    define('DB_HOST', "{{ $dbHost }}");
+    define('DB_USER', "{{ $dbUser }}");
+
+    define('DB_PASSWORD', "{{ .Values.mariadb.password }}");
+    define('TABLES_PREFIX', 'tbl_');
+
+    define('SITE_LANG','en');
+    define('MAX_FILESIZE', 8192);
+    define('EMAIL_ENCODING', 'utf-8');
+    define('DEBUG', false);
