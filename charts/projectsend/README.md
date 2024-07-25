@@ -1,6 +1,6 @@
 # projectsend
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.16.0](https://img.shields.io/badge/AppVersion-1.16.0-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.16.0](https://img.shields.io/badge/AppVersion-1.16.0-informational?style=flat-square)
 
 A Helm chart for deploying ProjectSend
 
@@ -57,7 +57,7 @@ A Helm chart for deploying ProjectSend
 | serviceAccount.create | bool | `true` | Specifies whether a service account should be created |
 | serviceAccount.name | string | `""` | The name of the service account to use. If not set and create is true, a name is generated using the fullname template |
 | tolerations | list | `[]` |  |
-| volumeMounts | list | `[{"mountPath":"/data","name":"data","readonly":false}]` | Additional volumeMounts on the output Deployment definition. |
+| volumeMounts | list | `[{"mountPath":"/data","name":"data"}]` | Additional volumeMounts on the output Deployment definition. |
 | volumes | list | `[{"name":"data","persistentVolumeClaim":{"claimName":"data-pvc"}}]` | Additional volumes on the output Deployment definition. |
 
 ----------------------------------------------
