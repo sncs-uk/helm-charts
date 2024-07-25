@@ -122,6 +122,22 @@ entries:
   projectsend:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-07-25T13:19:14.85873351Z"
+    dependencies:
+    - alias: mariadb
+      condition: mariadb.enabled
+      name: mariadb-instance
+      repository: https://sncs-uk.github.io/helm-charts
+      version: ~0.29.3
+    description: A Helm chart for deploying ProjectSend
+    digest: e04fe1a2b4780c3df21dbef7f1f9e3765534df12086d71f2cd5bd2814ba7fd45
+    name: projectsend
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/projectsend-1.0.1/projectsend-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-07-23T13:42:30.468479067Z"
     dependencies:
     - alias: mariadb
@@ -163,4 +179,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2024-07-23T13:42:30.468518712Z"
+generated: "2024-07-25T13:19:14.858757915Z"
