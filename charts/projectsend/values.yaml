@@ -124,7 +124,6 @@ volumes:
 volumeMounts:
 - name: data
   mountPath: "/data"
-  readonly: false
 
 nodeSelector: {}
 

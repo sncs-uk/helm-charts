@@ -4,7 +4,7 @@ description: A Helm chart for deploying ProjectSend
 
 type: application
 
-version: 1.0.0
+version: 1.0.1
 
 dependencies:
   - name: mariadb-instance
