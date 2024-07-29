@@ -119,6 +119,22 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/minio-tenant-5.0.15/minio-tenant-5.0.15.tgz
     version: 5.0.15
+  onetimesecret:
+  - apiVersion: v2
+    appVersion: v0.15.1
+    created: "2024-07-29T13:51:55.813776504Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: ~19.6.4
+    description: A Helm chart for deploying OneTimeSecret
+    digest: 7d1185b4e040966a898a4645bb0c6c9d3819610fc226c04d29ea934e8a9e6f1b
+    name: onetimesecret
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/onetimesecret-0.1.0/onetimesecret-0.1.0.tgz
+    version: 0.1.0
   projectsend:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -179,4 +195,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2024-07-25T13:19:14.858757915Z"
+generated: "2024-07-29T13:51:55.813792594Z"
