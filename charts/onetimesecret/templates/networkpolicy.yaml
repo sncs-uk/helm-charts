@@ -1,0 +1,42 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-frontend-to-redis-egress
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "onetimesecret.name" . }}
+      app.kubernetes.io/instance: {{ .Release.Name }}
+  policyTypes:
+    - Egress
+  egress:
+    - to:
+      - podSelector:
+          matchLabels:
+            app.kubernetes.io/name: redis
+            app.kubernetes.io/instance: {{ include "onetimesecret.name" . }}
+    - ports:
+      - protocol: TCP
+        port: 6379
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-frontend-to-redis-ingress
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: redis
+      app.kubernetes.io/instance: {{ include "onetimesecret.name" . }}
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+      - podSelector:
+          matchLabels:
+            app.kubernetes.io/name: {{ include "onetimesecret.name" . }}
+            app.kubernetes.io/instance: {{ .Release.Name }}
+    - ports:
+      - protocol: TCP
+        port: 6379
