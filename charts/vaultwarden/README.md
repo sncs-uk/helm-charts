@@ -1,6 +1,6 @@
 # vaultwarden
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.16.0](https://img.shields.io/badge/AppVersion-1.16.0-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.24.0](https://img.shields.io/badge/AppVersion-0.24.0-informational?style=flat-square)
 
 A Helm chart for installing a vaultwarden instance, including Network Security Policy
 
@@ -8,7 +8,7 @@ A Helm chart for installing a vaultwarden instance, including Network Security P
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://guerzon.github.io/vaultwarden | vaultwarden | 0.22.7 |
+| https://guerzon.github.io/vaultwarden | vaultwarden | 0.24.0 |
 
 ## Values
 
