@@ -181,6 +181,21 @@ entries:
     version: 1.0.0
   vaultwarden:
   - apiVersion: v2
+    appVersion: 0.30.1
+    created: "2024-11-19T10:08:50.436375647Z"
+    dependencies:
+    - name: vaultwarden
+      repository: https://guerzon.github.io/vaultwarden
+      version: 0.30.1
+    description: A Helm chart for installing a vaultwarden instance, including Network
+      Security Policy
+    digest: e616c0d877e9558d49ec4883c80deb2b4657026c9d837adaca5433f213dafc17
+    name: vaultwarden
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.2/vaultwarden-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
     appVersion: 0.24.0
     created: "2024-08-12T08:10:55.310745102Z"
     dependencies:
@@ -210,4 +225,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2024-08-12T08:10:55.310786399Z"
+generated: "2024-11-19T10:08:50.436406585Z"
