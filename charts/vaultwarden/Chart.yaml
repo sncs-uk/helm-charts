@@ -2,7 +2,7 @@ apiVersion: v2
 name: vaultwarden
 description: A Helm chart for installing a vaultwarden instance, including Network Security Policy
 type: application
-version: 1.0.1
+version: 1.0.2
 appVersion: "0.30.1"
 
 dependencies:
