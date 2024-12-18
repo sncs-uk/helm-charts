@@ -64,7 +64,7 @@ spec:
             - name: SERVER_HOSTNAME
               value: {{ .Values.smtp.hostname }}
             - name: SMTP_NETWORKS
-              value: {{ .Values.smtp.permittedNetworks }}
+              value: {{ join "," .Values.smtp.permittedNetworks }}
       {{- with .Values.volumes }}
       volumes:
         {{- toYaml . | nindent 8 }}

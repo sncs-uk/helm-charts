@@ -32,4 +32,23 @@ spec:
       ports:
       - protocol: TCP
         port: 25
+{{- if eq .Values.service.type "LoadBalancer" }}
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-network-to-smtp-ingress
+spec:
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+      {{- range .Values.smtp.permittedNetworks }}
+      - ipBlock:
+          cidr: {{ . }}
+      {{- end }}
+      ports:
+      - protocol: TCP
+        port: {{ .Values.smtp.smarthost.port }}
+{{- end }}
 {{- end }}
