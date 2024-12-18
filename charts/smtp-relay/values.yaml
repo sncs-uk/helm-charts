@@ -53,7 +53,8 @@ smtp:
   # -- This SMTP server's hostname
   hostname: my.kubernetes.smtp
   # -- Networks permitted to use this as a relay
-  permittedNetworks: 0.0.0.0/0
+  permittedNetworks:
+    - 0.0.0.0/0
 
 # -- Whether or not to apply NetworkPolicy as part of the deployment
 networkPolicy:

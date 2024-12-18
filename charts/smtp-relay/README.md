@@ -41,7 +41,7 @@ A Helm chart to deploy Postfix as an SMTP relay agent
 | serviceAccount.create | bool | `true` | Specifies whether a service account should be created |
 | serviceAccount.name | string | `""` | If not set and create is true, a name is generated using the fullname template |
 | smtp.hostname | string | `"my.kubernetes.smtp"` | This SMTP server's hostname |
-| smtp.permittedNetworks | string | `"0.0.0.0/0"` | Networks permitted to use this as a relay |
+| smtp.permittedNetworks | list | `["0.0.0.0/0"]` | Networks permitted to use this as a relay |
 | smtp.smarthost.hostname | string | `"my.upstream.smtp"` | Upstream SMTP SmartHost hostname |
 | smtp.smarthost.password | string | `""` | Password for the smarthost |
 | smtp.smarthost.port | int | `587` | Port for the smarthost |
