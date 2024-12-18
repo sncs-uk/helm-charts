@@ -171,6 +171,16 @@ entries:
   smtp-relay:
   - apiVersion: v2
     appVersion: 1.7.1
+    created: "2024-12-18T14:44:04.323032728Z"
+    description: A Helm chart to deploy Postfix as an SMTP relay agent
+    digest: fbd59d426257a661437ad4c6edd7960b4b1bd321201e057105746d3d0a24d211
+    name: smtp-relay
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/smtp-relay-1.0.2/smtp-relay-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.7.1
     created: "2024-12-18T14:20:06.819077851Z"
     description: A Helm chart to deploy Postfix as an SMTP relay agent
     digest: 8f196beaf4526ac06540c6a9e39f588373a0112be93b2d77415acd12b44f5bfc
@@ -235,4 +245,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2024-12-18T14:20:06.819107235Z"
+generated: "2024-12-18T14:44:04.323071219Z"
