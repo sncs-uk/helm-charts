@@ -4,6 +4,6 @@ description: A Helm chart to deploy Postfix as an SMTP relay agent
 
 type: application
 
-version: 1.0.0
+version: 1.0.1
 
 appVersion: "1.7.1"
