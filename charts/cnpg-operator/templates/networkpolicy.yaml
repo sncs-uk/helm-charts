@@ -1,0 +1,34 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-operator-to-clusters-egress
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/instance: cnpg-operator
+  policyTypes:
+    - Egress
+  egress:
+    - ports:
+      - protocol: TCP
+        port: 5432
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-operator-webhook-ingress
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/instance: cnpg-operator
+  policyTypes:
+    - Ingress
+  ingress:
+    - from:
+      - podSelector:
+          matchLabels:
+            cnpg.io/podRole: instance
+    - ports:
+      - protocol: TCP
+        port: 9443

@@ -1,0 +1,10 @@
+cluster:
+  version:
+    postgresql: "17"
+
+  cluster:
+    initdb:
+      database: app
+
+databaseconsumers:
+  labels: []
