@@ -4,9 +4,9 @@ description: A Helm chart for installing cnpg cluster including NetworkPolicies
 
 type: application
 
-version: 0.5.0
+version: 0.4.0
 
 dependencies:
 - name: cluster
-  version: 0.5.0
+  version: 0.4.0
   repository: https://cloudnative-pg.github.io/charts
