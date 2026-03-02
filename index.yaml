@@ -42,6 +42,19 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/cnpg-cluster-0.5.0/cnpg-cluster-0.5.0.tgz
     version: 0.5.0
+  - apiVersion: v2
+    created: "2026-03-02T12:57:02.979063204Z"
+    dependencies:
+    - name: cluster
+      repository: https://cloudnative-pg.github.io/charts
+      version: 0.4.0
+    description: A Helm chart for installing cnpg cluster including NetworkPolicies
+    digest: b4d4587082cdb7de9834583972a8bd80202a74c6a2702d3af573f9f489df9fc8
+    name: cnpg-cluster
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/cnpg-cluster-0.4.0/cnpg-cluster-0.4.0.tgz
+    version: 0.4.0
   cnpg-operator:
   - apiVersion: v2
     appVersion: 1.28.1
@@ -302,4 +315,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2026-03-02T11:53:58.850540589Z"
+generated: "2026-03-02T12:57:02.979099151Z"
