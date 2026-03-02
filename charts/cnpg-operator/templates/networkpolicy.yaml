@@ -21,14 +21,10 @@ metadata:
 spec:
   podSelector:
     matchLabels:
-      app.kubernetes.io/instance: cnpg-operator
+      app.kubernetes.io/instance: {{ .Release.Name }}
   policyTypes:
     - Ingress
   ingress:
-    - from:
-      - podSelector:
-          matchLabels:
-            cnpg.io/podRole: instance
     - ports:
       - protocol: TCP
         port: 9443
