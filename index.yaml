@@ -1,5 +1,33 @@
 apiVersion: v1
 entries:
+  cnpg:
+  - apiVersion: v2
+    appVersion: 1.28.1
+    created: "2026-03-02T11:48:36.658724465Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: https://cloudnative-pg.github.io/charts
+      version: 0.27.1
+    description: A Helm chart for installing cnpg operator including NetworkPolicies
+    digest: e8034425a9ba18f7ccff470055400ac33f8cc7b710ac68b87577e0b788a7cc00
+    name: cnpg
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/cnpg-0.27.1/cnpg-0.27.1.tgz
+    version: 0.27.1
+  - apiVersion: v2
+    created: "2026-03-02T11:48:36.799517221Z"
+    dependencies:
+    - name: cluster
+      repository: https://cloudnative-pg.github.io/charts
+      version: 0.5.0
+    description: A Helm chart for installing cnpg cluster including NetworkPolicies
+    digest: 46892d4b69af35beb0a6658575621ae47e59ebecaf5c7c4a519d3277f0ed5643
+    name: cnpg
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/cnpg-0.5.0/cnpg-0.5.0.tgz
+    version: 0.5.0
   mariadb-instance:
   - apiVersion: v2
     appVersion: 0.29.0
@@ -245,4 +273,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2024-12-18T14:44:04.323071219Z"
+generated: "2026-03-02T11:48:36.799553038Z"
