@@ -1,0 +1,77 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-frontend-to-valkey-egress
+spec:
+  policyTypes:
+    - Egress
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/component: netbox
+  egress:
+    - to:
+      - podSelector:
+          matchLabels:
+            app.kubernetes.io/name: valkey
+      ports:
+      - protocol: TCP
+        port: 6379
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-frontend-to-valkey-ingress
+spec:
+  policyTypes:
+    - Ingress
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: valkey
+  ingress:
+    - from:
+      - podSelector:
+          matchLabels:
+            app.kubernetes.io/component: netbox
+      ports:
+      - protocol: TCP
+        port: 6379
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-worker-to-valkey-egress
+spec:
+  policyTypes:
+    - Egress
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/component: worker
+  egress:
+    - to:
+      - podSelector:
+          matchLabels:
+            app.kubernetes.io/name: valkey
+      ports:
+      - protocol: TCP
+        port: 6379
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-worker-to-valkey-ingress
+spec:
+  policyTypes:
+    - Ingress
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: valkey
+  ingress:
+    - from:
+      - podSelector:
+          matchLabels:
+            app.kubernetes.io/component: worker
+            app.kubernetes.io/instance:
+      ports:
+      - protocol: TCP
+        port: 6379
