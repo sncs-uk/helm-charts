@@ -71,7 +71,6 @@ spec:
       - podSelector:
           matchLabels:
             app.kubernetes.io/component: worker
-            app.kubernetes.io/instance:
       ports:
       - protocol: TCP
         port: 6379
