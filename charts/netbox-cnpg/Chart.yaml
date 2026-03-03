@@ -1,0 +1,17 @@
+apiVersion: v2
+name: netbox-cnpg
+description: A Helm chart for deploying a Netbox instance alongside a cnpg cluster
+
+type: application
+
+version: 0.0.1
+
+dependencies:
+- name: cluster
+  version: 0.4.0
+  repository: https://cloudnative-pg.github.io/charts
+- name: netbox
+  version: 8.0.5
+  repository: https://charts.netbox.oss.netboxlabs.com/
+
+appVersion: "1.28.1"
