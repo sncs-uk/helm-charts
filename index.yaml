@@ -189,6 +189,24 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/minio-tenant-5.0.15/minio-tenant-5.0.15.tgz
     version: 5.0.15
+  netbox-cnpg:
+  - apiVersion: v2
+    appVersion: 1.28.1
+    created: "2026-03-03T09:00:42.293322638Z"
+    dependencies:
+    - name: cluster
+      repository: https://cloudnative-pg.github.io/charts
+      version: 0.4.0
+    - name: netbox
+      repository: https://charts.netbox.oss.netboxlabs.com/
+      version: 8.0.5
+    description: A Helm chart for deploying a Netbox instance alongside a cnpg cluster
+    digest: 71d56f87bdc9c2ef62fcb01fb33170d218194e9e197787a6e45da9ba4abcbb43
+    name: netbox-cnpg
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/netbox-cnpg-0.0.1/netbox-cnpg-0.0.1.tgz
+    version: 0.0.1
   onetimesecret:
   - apiVersion: v2
     appVersion: v0.15.1
@@ -315,4 +333,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2026-03-02T12:57:02.979099151Z"
+generated: "2026-03-03T09:00:42.293373744Z"
