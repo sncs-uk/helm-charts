@@ -4,7 +4,7 @@ description: A Helm chart for deploying a Netbox instance alongside a cnpg clust
 
 type: application
 
-version: 0.0.1
+version: 0.0.2
 
 dependencies:
 - name: cluster
