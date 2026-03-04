@@ -192,6 +192,23 @@ entries:
   netbox-cnpg:
   - apiVersion: v2
     appVersion: 1.28.1
+    created: "2026-03-04T12:30:46.727831084Z"
+    dependencies:
+    - name: cluster
+      repository: https://cloudnative-pg.github.io/charts
+      version: 0.4.0
+    - name: netbox
+      repository: https://charts.netbox.oss.netboxlabs.com/
+      version: 8.0.5
+    description: A Helm chart for deploying a Netbox instance alongside a cnpg cluster
+    digest: ef82561f8be5867ea2629b3b48bc7552a57bbde3292cdc2cb6cba17e1220ceca
+    name: netbox-cnpg
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/netbox-cnpg-0.0.2/netbox-cnpg-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 1.28.1
     created: "2026-03-03T09:00:42.293322638Z"
     dependencies:
     - name: cluster
@@ -333,4 +350,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2026-03-03T09:00:42.293373744Z"
+generated: "2026-03-04T12:30:46.727871098Z"
