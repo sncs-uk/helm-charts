@@ -1,6 +1,6 @@
 # netbox-cnpg
 
-![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.28.1](https://img.shields.io/badge/AppVersion-1.28.1-informational?style=flat-square)
+![Version: 0.0.3](https://img.shields.io/badge/Version-0.0.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.28.1](https://img.shields.io/badge/AppVersion-1.28.1-informational?style=flat-square)
 
 A Helm chart for deploying a Netbox instance alongside a cnpg cluster
 
@@ -23,6 +23,7 @@ A Helm chart for deploying a Netbox instance alongside a cnpg cluster
 | cluster.mode | string | `"standalone"` |  |
 | cluster.nameOverride | string | `"netbox"` |  |
 | cluster.version.postgresql | string | `"18"` |  |
+| deploy_network_policies | bool | `true` |  |
 | netbox.externalDatabase.database | string | `"netbox"` |  |
 | netbox.externalDatabase.engine | string | `"django.db.backends.postgresql"` |  |
 | netbox.externalDatabase.existingSecretKey | string | `"password"` |  |

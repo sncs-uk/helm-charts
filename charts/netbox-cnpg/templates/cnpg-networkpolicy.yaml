@@ -1,3 +1,4 @@
+{{- if .Values.deploy_network_policies -}}
 ---
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
@@ -50,3 +51,4 @@ spec:
       ports:
       - port: 5432
         protocol: TCP
+{{- end }}

@@ -23,3 +23,5 @@ cluster:
       enabled: false
     initdb:
       database: netbox
+
+deploy_network_policies: true
