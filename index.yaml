@@ -70,6 +70,20 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/cnpg-operator-0.27.1/cnpg-operator-0.27.1.tgz
     version: 0.27.1
+  - apiVersion: v2
+    appVersion: 1.28.1
+    created: "2026-03-20T11:30:22.325348347Z"
+    dependencies:
+    - name: cloudnative-pg
+      repository: https://cloudnative-pg.github.io/charts
+      version: 0.27.1
+    description: A Helm chart for installing cnpg operator including NetworkPolicies
+    digest: 8b8c028ec52db1ef681893fd42c118252ac9dad7f7f2c3a1d5b74759af36409d
+    name: cnpg-operator
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/cnpg-operator-0.27.1-2/cnpg-operator-0.27.1-2.tgz
+    version: 0.27.1-2
   mariadb-instance:
   - apiVersion: v2
     appVersion: 0.29.0
@@ -367,4 +381,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2026-03-20T10:35:13.023349695Z"
+generated: "2026-03-20T11:30:22.325385807Z"
