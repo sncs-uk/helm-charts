@@ -1,0 +1,21 @@
+upstream:
+  cloudflare:
+    tunnel_token: ""
+  podLabels:
+    app.kubernetes.io/component: cloudflare-tunnel
+    app.kubernetes.io/instance: cloudflared
+    app.kubernetes.io/name: cloudflare-tunnel
+
+destinations: []
+  # - name: ingress-nginx
+  #   namespaceSelectors:
+  #     matchLabels:
+  #       kubernetes.io/metadata.name: ingress-nginx
+  #   podSelectors:
+  #     matchLabels:
+  #       app.kubernetes.io/component: controller
+  #   ports:
+  #     - protocol: TCP
+  #       port: 443
+  #     - protocol: TCP
+  #       port: 80
