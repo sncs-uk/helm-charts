@@ -1,0 +1,28 @@
+{{- range .Values.destinations -}}
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-cloudflare-tunnel-to-asd-egress
+spec:
+  policyTypes:
+    - Egress
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/component: cloudflare-tunnel
+  egress:
+    - to:
+      -
+      {{- with .podSelectors }}
+        podSelector:
+        {{- toYaml . | nindent 10 }}
+      {{- end }}
+      {{- with .namespaceSelectors }}
+        namespaceSelector:
+        {{- toYaml . | nindent 10 }}
+      {{- end }}
+      {{- with .ports }}
+        ports:
+        {{- toYaml . | nindent 10 }}
+      {{- end }}
+{{- end }}

@@ -1,0 +1,15 @@
+apiVersion: v2
+name: cloudflare-tunnel-remote
+description: A Helm chart for deploying a cloudflare remote-managed tunnel with network policies
+
+type: application
+
+version: 0.0.1
+
+dependencies:
+- name: cloudflare-tunnel-remote
+  version: 0.1.2
+  repository: https://cloudflare.github.io/helm-charts
+  alias: upstream
+
+appVersion: "1.28.1"
