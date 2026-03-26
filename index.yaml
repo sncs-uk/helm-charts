@@ -1,5 +1,22 @@
 apiVersion: v1
 entries:
+  cloudflare-tunnel-remote:
+  - apiVersion: v2
+    appVersion: 1.28.1
+    created: "2026-03-26T15:43:44.173894468Z"
+    dependencies:
+    - alias: upstream
+      name: cloudflare-tunnel-remote
+      repository: https://cloudflare.github.io/helm-charts
+      version: 0.1.2
+    description: A Helm chart for deploying a cloudflare remote-managed tunnel with
+      network policies
+    digest: e04583c4f527d20bf84ccc3853db82d3f60b9de637332f1fae07386efdda1919
+    name: cloudflare-tunnel-remote
+    type: application
+    urls:
+    - https://github.com/sncs-uk/helm-charts/releases/download/cloudflare-tunnel-remote-0.0.1/cloudflare-tunnel-remote-0.0.1.tgz
+    version: 0.0.1
   cnpg:
   - apiVersion: v2
     appVersion: 1.28.1
@@ -381,4 +398,4 @@ entries:
     urls:
     - https://github.com/sncs-uk/helm-charts/releases/download/vaultwarden-1.0.0/vaultwarden-1.0.0.tgz
     version: 1.0.0
-generated: "2026-03-20T11:30:22.325385807Z"
+generated: "2026-03-26T15:43:44.173943469Z"
